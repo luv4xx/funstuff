@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Uncial+Antiqua&display=swap');
+
+.App {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F3F3F3;
+  padding: 80px;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header-left {
+  position: relative;
+}
+
+.header-right {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.name {
+  position: absolute;
+  left: 36px;
+  bottom: -8px;
+  font-size: 24px;
+  font-weight: 500;
+}
+ 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Uncial Antiqua', cursive;
+}
+
+.left {
+  font-size: 120px;
+}
+
+.right {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top {
+  font-family: 'Uncial Antiqua', cursive;
+}
+
+.top > img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.block {
+  width: 320px;
+  height: 4px;
+  background-color: #000;
+}
+
+.bottom {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.bottom-first{
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.bottom-second {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.footer {
+  align-self: flex-end;
+  text-align: right;
+  font-family: 'Special Elite', cursive;
+}
+
+.footer > span {
+  display: inline-block;
+  padding: 0 6px;
+  text-decoration: underline;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all .6s ease-in-out;
+}
+
+a {
+  color: #000;
+}
+
+.footer > span:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  animation: floating 2.5s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  margin-bottom: 4px;
+}
+
+.icon:hover {
+  animation-play-state: paused;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-14px);
+  }
+  60% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.swing {
+ 
+}
+
+.swing:hover {
+  transform-origin: bottom center;
+  animation-name: swing;
+  animation-duration: 3s;
+  animation-play-state:running;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
