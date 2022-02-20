@@ -1,5 +1,6 @@
 {
-  "name": "my-resume",
+  "name": "fun-stuff",
+  "homepage": "https://luv4xx.github.io/funstuff",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
