@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="header-left">
-          <img src={logo} />
+          <img src={logo} alt="logo"/>
           <div className='name'>Luv4xx</div>
         </div>
         <div className='header-right'>2022</div>
@@ -20,7 +20,7 @@ function App() {
         </div>
         <div className="right">
          <div className="top swing">
-           <img src={mark} />
+           <img src={mark} alt="mark"/>
          </div>
          <div className='block'></div>
          <div className='bottom'>
@@ -31,7 +31,7 @@ function App() {
       </div>
       <div className='footer'>
         <div className='icon'>
-          <img src={icon} />
+          <img src={icon} alt="icon"/>
         </div>
         I kinda dislike <span>
           <a href={"https://open.spotify.com/track/2nBPqKLFQUeBQhs03cKGU3?si=9612a22b69f648bb"} target={"_blank"} rel="noreferrer">
